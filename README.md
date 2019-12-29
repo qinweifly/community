@@ -24,3 +24,4 @@ create table USER
         primary key (ID)
 );
 ```
+mvn flyway:migrate
