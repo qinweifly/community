@@ -9,6 +9,7 @@
 
 ##工具
 [Git](https://git-scm.com/downloads)
+[Flyway](https://flywaydb.org/getstarted/firststeps/maven)
 
 ##脚本
 ```sql
@@ -24,4 +25,7 @@ create table USER
         primary key (ID)
 );
 ```
+
+```bash
 mvn flyway:migrate
+```
