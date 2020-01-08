@@ -85,10 +85,10 @@ function collapseComments(e) {
                     })).append($("<div/>", {
                         "html": comment.content
                     })).append($("<div/>", {
-                        "class":"menu"
+                        "class": "menu"
                     })).append($("<span/>", {
-                        "class":"pull-right",
-                        "html":moment(comment.gmtCreate).format('YYYY-MM-DD')
+                        "class": "pull-right",
+                        "html": moment(comment.gmtCreate).format('YYYY-MM-DD')
                     }));
 
                     var mediaElement = $("<div/>", {
@@ -108,6 +108,23 @@ function collapseComments(e) {
                 e.setAttribute("data-collapse", "in");
                 e.classList.add("active");
             });
+        }
+    }
+}
+
+function showSelectTag(){
+    $("#select-Tag").show();
+}
+
+function selectTag(e) {
+    var value = e.getAttribute("data-tag");
+    var previous = $("#tag").val();
+
+    if (previous.split(",").indexOf(value) == -1) {
+        if (previous) {
+            $("#tag").val(previous + ',' + value);
+        } else {
+            $("#tag").val(value);
         }
     }
 }
