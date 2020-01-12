@@ -1,4 +1,4 @@
-##飞天欢乐社区(FlyingJoyCommunity)
+##欢乐社区(FlyingJoyCommunity)
 
 ##资料
 [Spring文档](https://spring.io/guides)
@@ -7,6 +7,7 @@
 [BootStrap](https://v3.bootcss.com/getting-started/)
 [Github OAuth](https://developer.github.com/apps/building-github-apps/creating-a-github-app/)
 [Markdown 插件](https://pandao.github.io/editor.md/)
+[UFile SDK](https://github.com/ucloud/ufile-sdk-java)
 
 ##工具
 [Git](https://git-scm.com/downloads)
