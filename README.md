@@ -6,6 +6,7 @@
 [es](https://elasticsearch.cn/explore)
 [BootStrap](https://v3.bootcss.com/getting-started/)
 [Github OAuth](https://developer.github.com/apps/building-github-apps/creating-a-github-app/)
+[Markdown 插件](https://pandao.github.io/editor.md/)
 
 ##工具
 [Git](https://git-scm.com/downloads)
@@ -28,5 +29,6 @@ create table USER
 
 ```bash
 mvn flyway:migrate
+
 mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
 ```
