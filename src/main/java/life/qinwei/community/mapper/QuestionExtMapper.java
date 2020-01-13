@@ -1,5 +1,6 @@
 package life.qinwei.community.mapper;
 
+import life.qinwei.community.dto.QuestionQueryDTO;
 import life.qinwei.community.model.Question;
 import life.qinwei.community.model.QuestionExample;
 import org.apache.ibatis.annotations.Param;
@@ -13,4 +14,8 @@ public interface QuestionExtMapper {
     int incCommentCount(Question record);
 
     List<Question> selectRelated (Question question);
+
+    Integer countBySearch(QuestionQueryDTO questionQueryDTO);
+
+    List<Question> selectBySearch(QuestionQueryDTO questionQueryDTO);
 }
