@@ -11,7 +11,8 @@ public enum CustomizeErrorCode implements ICustomizeErrorCode {
     COMMENT_IS_EMPTY(2007,"输入内容不能为空"),
     READ_NOTIFICATION_FAIL(2008,"兄弟你这是读别人的信息呢？"),
     NOTIFICATION_NOT_FOUND(2008,"消息莫不是不翼而飞了？"),
-    FILE_UPLOAD_FAILE(2008,"文件上传失败")
+    FILE_UPLOAD_FAILE(2008,"文件上传失败"),
+    GITHUB_NAME_NULL(2008,"您的GitHub用户名为空呀，请先去设置用户名呢")
     ;
 
     @Override

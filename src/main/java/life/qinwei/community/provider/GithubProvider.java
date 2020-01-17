@@ -3,6 +3,8 @@ package life.qinwei.community.provider;
 import com.alibaba.fastjson.JSON;
 import life.qinwei.community.dto.AccessTokenDTO;
 import life.qinwei.community.dto.GithubUser;
+import life.qinwei.community.exception.CustomizeErrorCode;
+import life.qinwei.community.exception.CustomizeException;
 import okhttp3.*;
 import org.springframework.stereotype.Component;
 
@@ -37,6 +39,9 @@ public class GithubProvider {
         try {Response response = client.newCall(request).execute();
             String string = response.body().string();
             GithubUser githubUser = JSON.parseObject(string, GithubUser.class);
+            if (githubUser.getName().isEmpty()){
+                throw new CustomizeException(CustomizeErrorCode.GITHUB_NAME_NULL);
+            }
             return githubUser;
         } catch (IOException e) {
         }
